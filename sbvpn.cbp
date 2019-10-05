@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="sbvpn" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/sbvpn" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-m64" />
+					<Add option="-g" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+					<Add directory="include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-m64" />
+					<Add library="libwxmsw31ud_richtext.a" />
+					<Add library="libwxmsw31ud_aui.a" />
+					<Add library="libwxmsw31ud_media.a" />
+					<Add library="libwxbase31ud_net.a" />
+					<Add library="libwxbase31ud_xml.a" />
+					<Add library="libwxmsw31ud_adv.a" />
+					<Add library="libwxmsw31ud_html.a" />
+					<Add library="libwxmsw31ud_core.a" />
+					<Add library="libwxbase31ud.a" />
+					<Add library="libwxpngd.a" />
+					<Add library="libwxjpegd.a" />
+					<Add library="libwxtiffd.a" />
+					<Add library="libwxzlibd.a" />
+					<Add library="libwxregexud.a" />
+					<Add directory="$(#wx)/gcc_dll_debug_x64" />
+					<Add directory="$(#wx)/gcc_dll_debug_x64/mswud" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/sbvpn" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="0" />
+				<Option compiler="gcc" />
+				<Option projectLinkerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+					<Add directory="include" />
+				</Compiler>
+				<ResourceCompiler>
+					<Add directory="$(#wx)/lib/gcc_dll/mswu" />
+				</ResourceCompiler>
+				<Linker>
+					<Add option="-s" />
+					<Add option="-m64" />
+					<Add library="libwxmsw31u_richtext.a" />
+					<Add library="libwxmsw31u_aui.a" />
+					<Add library="libwxmsw31u_media.a" />
+					<Add library="libwxbase31u_net.a" />
+					<Add library="libwxbase31u_xml.a" />
+					<Add library="libwxmsw31u_adv.a" />
+					<Add library="libwxmsw31u_html.a" />
+					<Add library="libwxmsw31u_core.a" />
+					<Add library="libwxbase31u.a" />
+					<Add library="libwxpng.a" />
+					<Add library="libwxjpeg.a" />
+					<Add library="libwxtiff.a" />
+					<Add library="libwxzlib.a" />
+					<Add library="libwxregexu.a" />
+					<Add directory="$(#wx)/gcc_dll_release_x64" />
+					<Add directory="$(#wx)/gcc_dll_release_x64/mswu" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-pipe" />
+			<Add option="-mthreads" />
+			<Add option="-D__GNUWIN32__" />
+			<Add option="-D__WXMSW__" />
+			<Add option="-DWXUSINGDLL" />
+			<Add option="-DwxUSE_UNICODE" />
+			<Add directory="$(#wx)/include" />
+			<Add directory="include" />
+		</Compiler>
+		<ResourceCompiler>
+			<Add directory="$(#wx)/include" />
+		</ResourceCompiler>
+		<Linker>
+			<Add option="-mthreads" />
+		</Linker>
+		<Unit filename="WxWizDialog.fbp" />
+		<Unit filename="include/GUIDialog.h" />
+		<Unit filename="include/Shell.h" />
+		<Unit filename="include/sbvpnApp.h" />
+		<Unit filename="include/sbvpnMain.h" />
+		<Unit filename="resource.rc">
+			<Option compilerVar="WINDRES" />
+		</Unit>
+		<Unit filename="src/GUIDialog.cpp" />
+		<Unit filename="src/Shell.cpp" />
+		<Unit filename="src/sbvpnApp.cpp" />
+		<Unit filename="src/sbvpnMain.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
